@@ -1,0 +1,19 @@
+{
+  "name": "jiyuwu.cms",
+  "version": "1.0.0",
+  "description": "内容管理系统小程序",
+  "main": "main.js",
+  "scripts": {
+    "dev:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin UNI_ENV=test uni-app-cli-service serve",
+    "build:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin UNI_ENV=prod uni-app-cli-service build",
+    "dev:h5": "cross-env UNI_PLATFORM=h5 UNI_ENV=test uni-app-cli-service serve",
+    "build:h5": "cross-env UNI_PLATFORM=h5 UNI_ENV=prod uni-app-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^1.5.0",
+    "mockjs": "^1.1.0",
+    "uview-plus": "^3.3.36",
+    "vue-i18n": "^8.28.2",
+    "vuex": "^4.1.0"
+  }
+}
