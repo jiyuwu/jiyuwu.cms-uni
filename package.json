@@ -12,7 +12,6 @@
   "dependencies": {
     "axios": "^1.5.0",
     "mockjs": "^1.1.0",
-    "uview-plus": "^3.3.36",
     "vue-i18n": "^8.28.2",
     "vuex": "^4.1.0"
   }

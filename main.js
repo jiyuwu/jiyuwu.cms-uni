@@ -1,15 +1,11 @@
 // 引入 Vue 3 和其他依赖
 import { createApp } from 'vue'; // Vue 3 中的 createApp
 import App from './App.vue'; // Vue 3 文件扩展名通常使用 `.vue`
-import commonMethods from './utils/common.js';
 
 import zhHans from '@/lang/zh-Hans.js';
 import en from '@/lang/en.js';
 import { createI18n } from 'vue-i18n'; // Vue 3 的国际化插件
 import store from './store'; // Vuex store
-
-// 引入 uView UI 库
-import uView from 'uview-plus';
 
 // 创建 Vue 3 应用实例
 const app = createApp(App);
@@ -27,22 +23,6 @@ const i18n = createI18n({
 // 在 Vue 3 中使用插件
 app.use(i18n);
 app.use(store);
-app.use(uView);
-
-// 挂载全局方法
-app.config.globalProperties.$commonMethods = commonMethods;
-
-// 设置 uView 配置
-uni.$u.setConfig({
-  config: {
-    unit: 'rpx',
-  },
-  props: {
-    radio: {
-      size: 15,
-    }
-  }
-});
 
 // 禁用生产提示
 app.config.productionTip = false;
